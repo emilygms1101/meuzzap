@@ -3,80 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cartão de Contato</title>
+  <title>Vazadinhos B4nid0s</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background-color: black;
+      color: white;
       font-family: Arial, sans-serif;
-      background: #f1f1f1;
-      display: flex;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background-image: url('https://i.imgur.com/Wk9dj0J.png'); /* substitua por sua imagem se quiser */
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .botao {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-    }
-    .card {
-      background: #fffdd0;
-      padding: 30px 20px;
-      border-radius: 15px;
-      text-align: center;
-      width: 280px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-    .name {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .info {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-    .whatsapp-btn {
-      display: inline-block;
-      background-color: #25D366;
+      background-color: #a60000;
       color: white;
+      font-size: 18px;
+      border-radius: 30px;
+      padding: 15px 30px;
+      border: 2px solid white;
+      cursor: pointer;
       text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background 0.3s;
     }
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
+
+    .botao span {
+      background-color: #3a3a3a;
+      color: white;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="profile.png" alt="Foto de perfil" class="profile-img">
-    <div class="name">Emily Gomes</div>
-    <div class="info">20 anos<br>RJ / São Paulo</div>
-    <button class="whatsapp-btn" onclick="redirecionarWhatsApp()">Falar no WhatsApp</button>
+  <div class="container">
+    <div class="logo"></div>
+    <h1>Vazadinhos B4nid0s</h1>
+    <div class="subtitle">O que você procura 👇🤬</div>
+    <a class="botao" href="https://t.me/+bCevtC_KQ0QzYmUx" target="_blank">
+      <span>18+</span>
+      Grupo completo
+    </a>
   </div>
-
-  <script>
-    const numerosWhatsApp = [
-      '5521959252657',  // Número secundário
-      '5521959182380', //  Número primeiro 
-    ];
-
-    function redirecionarWhatsApp() {
-      const index = Math.floor(Math.random() * numerosWhatsApp.length);
-      const numero = numerosWhatsApp[index];
-      const mensagem = encodeURIComponent("Oi Emily, tenho interesse!");
-      const link = `https://wa.me/${numero}?text=${mensagem}`;
-      window.location.href = link;
-    }
-  </script>
-
 </body>
 </html>
