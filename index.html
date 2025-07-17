@@ -47,8 +47,8 @@
       background-color: #a60000;
       color: white;
       font-size: 18px;
-      border-radius: 35px;
-      padding: 15px 40px;
+      border-radius: 40px;
+      height: 70px; /* Altura maior */
       border: 2px solid white;
       cursor: pointer;
       text-decoration: none;
@@ -56,20 +56,18 @@
       max-width: 600px;
       margin: 0 auto;
       position: relative;
+      box-sizing: border-box;
+      padding-left: 70px; /* espaço para a imagem não sobrepor o texto */
     }
 
     .botao img {
       position: absolute;
       left: 15px;
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid black;
-    }
-
-    .botao span {
-      margin-left: 50px; /* espaço para não sobrepor a imagem */
     }
   </style>
 </head>
@@ -80,7 +78,7 @@
     <div class="subtitle">O que você procura 👇🤬</div>
     <a class="botao" href="https://t.me/+bCevtC_KQ0QzYmUx" target="_blank">
       <img src="fire.png" alt="ícone de fogo">
-      <span>Grupo completo</span>
+      Grupo completo
     </a>
   </div>
 </body>
